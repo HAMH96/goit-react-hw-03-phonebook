@@ -54,7 +54,7 @@ export class App extends Component {
     const updatedContacts = [...contacts, newContact];
 
     this.setState({ contacts: updatedContacts });
-    localStorage.setItem("contacts", JSON.stringify(updatedContacts));
+    localStorage.setItem('contacts', JSON.stringify(updatedContacts));
     Notiflix.Notify.success('Contacto guardado exitosamente');
   };
 
